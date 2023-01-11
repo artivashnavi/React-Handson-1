@@ -1,25 +1,17 @@
-import logo from './logo.svg';
+import React from "react"
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import FuncComp from "./Components/FuncComp";
+import ClassComp from "./Components/ClassComp";
+class App extends React.Component{
+  render(){
+      return (
+        <div className="App">
+          <h1>Styling using Functional and Class Component</h1>
+          <FuncComp />
+          <ClassComp />
+        </div>
+      );
+  }
 }
 
 export default App;
